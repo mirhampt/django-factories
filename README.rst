@@ -130,6 +130,7 @@ Todo
 - Write more bundled factories for contrib apps: auth, sites, etc.
 - Create management command to print out information about available
   blueprints.
+- Write a tutorial.
 
 Bug Reports
 -----------
