@@ -106,11 +106,11 @@ If any of the strings in the blueprint include standard Python formatting by
 key name syntax, the values of the other parameters will be interpolated into
 the string::
 
-    >>> author = blog_factory.author()
+    >>> author = blog_factory.build_author()
     >>> author.email
     'John_Doe@somewhere'
 
-    >>> sam_author = blog_factory.author(first_names='Sam')
+    >>> sam_author = blog_factory.build_author(first_names='Sam')
     >>> author.email
     'Sam_Doe@somewhere'
 
