@@ -93,7 +93,8 @@ def blueprint(model):
         # FactoryMetaclass.
         _wrapped_func._factories_model = model_cls
         _wrapped_func._factories_blueprint = True
-        _wrapped_func.__doc__ = 'Blueprint: ' + _wrapped_func.__doc__
+        if _wrapped_func.__doc__ is not None:
+            _wrapped_func.__doc__ = 'Blueprint: ' + _wrapped_func.__doc__
 
         return _wrapped_func
     return _decorator
